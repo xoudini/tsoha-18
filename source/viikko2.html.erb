@@ -215,7 +215,7 @@
 </p>
 
 <p>
-  Luodaan seuraavaksi sovelluksen juurikansioon tiedosto <code>run.sh</code>, jota käytetään sovelluksen käynnistämiseen. Tiedoston ensimmäiselle riville tulee komento <code>from application import app</code>, eli lataa moduulista <code>application</code> muuttuja <code>app</code>. Tässä moduuli <code>application</code> tarkoittaa käytännössä kansiota <code>application</code> ja <code>app</code> kansiossa olevan <code>__init__.py</code> lähdekoodin suorittamisen yhteydessä luotavaa <code>app</code>-muuttujaa, joka viittaa Flaskiin.
+  Luodaan seuraavaksi sovelluksen juurikansioon tiedosto <code>run.py</code>, jota käytetään sovelluksen käynnistämiseen. Tiedoston ensimmäiselle riville tulee komento <code>from application import app</code>, eli lataa moduulista <code>application</code> muuttuja <code>app</code>. Tässä moduuli <code>application</code> tarkoittaa käytännössä kansiota <code>application</code> ja <code>app</code> kansiossa olevan <code>__init__.py</code> lähdekoodin suorittamisen yhteydessä luotavaa <code>app</code>-muuttujaa, joka viittaa Flaskiin.
 </p>
 
 <p>
@@ -514,12 +514,14 @@ if __name__ == '__main__':
 </p>
 
 <p>
-  Sovelluksessa saattaa olla ohjelmointiympäristöön liittyviä tiedostoja, jotka kannattaa jättää pois versionhallinnasta. Osoitteessa <a href="https://github.com/github/gitignore/blob/master/Python.gitignore" target="_blank" norel>https://github.com/github/gitignore/blob/master/Python.gitignore</a> on hyvä lista <code>.gitignore</code>-tiedostoon lisättävistä asioista. Lisää ne projektisi <code>.gitignore</code>-tiedostoon.
+  Sovelluksessa saattaa olla ohjelmointiympäristöön liittyviä tiedostoja, jotka kannattaa jättää pois versionhallinnasta. Osoitteessa <a href="https://github.com/github/gitignore/blob/master/Python.gitignore" target="_blank" norel>https://github.com/github/gitignore/blob/master/Python.gitignore</a> on hyvä lista <code>.gitignore</code>-tiedostoon lisättävistä asioista.
 </p>
 
 <p>
   Laajemmin ottaen voit ajatella versionhallinnassa säilöttävien asioiden lisäämisestä seuraavasti: "oletko luonut tiedoston tai kansion? Jos et, tiedosto/kansio on autogeneroitu ja kuuluu gitignoreen".
 </p>
+
+<p> 
 
 
 <% partial 'partials/material_heading' do %>
